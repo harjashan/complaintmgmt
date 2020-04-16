@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterformActivity"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/todate"
+        android:layout_width="94dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:text="select..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/edit2"
+        app:layout_constraintTop_toBottomOf="@+id/fromdate" />
+
+    <TextView
+        android:id="@+id/regcomplain"
+        android:layout_width="349dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="24dp"
+        android:text="Register your Complaint..."
+        android:textColor="@color/Black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="356dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:background="@color/Transparent"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Location"
+        android:inputType="textMultiLine"
+        android:lines="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regcomplain"
+        tools:ignore="RtlCompat" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="356dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/Transparent"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="168dp"
+        android:layout_marginRight="98dp"
+        android:text="Type of Complaint:"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="110dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginRight="317dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="auto"
+            android:text="Plumbing"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="268dp" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carpentry"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electrical"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="332dp" />
+
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masonry"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="364dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dateavailable"
+        android:layout_width="314dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Date of availability"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="343dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/Transparent"
+        android:ems="10"
+        android:hint="Contact no."
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit2"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/btn2"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="210dp"
+        android:background="@color/Transparent"
+        android:hint="From:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateavailable"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="216dp"
+        android:background="@color/Transparent"
+        android:hint="To:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit1"
+        tools:ignore="MissingConstraints,RtlCompat" />
+
+    <Button
+        android:id="@+id/fromdate"
+        android:layout_width="94dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="select..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/dateavailable" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="89dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toEndOf="@+id/edit2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="89dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="15dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toEndOf="@+id/edit1"
+        app:layout_constraintTop_toBottomOf="@+id/dateavailable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

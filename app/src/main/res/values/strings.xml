@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">SLIET estate</string>
+    <string-array name="datestring">
+        <item>Date</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="monthstring">
+        <item>Month</item>
+        <item>Jan</item>
+        <item>Feb</item>
+    </string-array>
+    <string-array name="yearstring">
+        <item>Year</item>
+        <item>1998</item>
+        <item>1999</item>
+    </string-array>
+    <string-array name="genderstring">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_admin">admin</string>
+</resources>

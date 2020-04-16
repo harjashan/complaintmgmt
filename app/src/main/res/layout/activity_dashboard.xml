@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DashboardActivity">
+
+
+    <TextView
+        android:id="@+id/dashboard"
+        android:layout_width="182dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="24dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="5dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Dashboard"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateIds" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@drawable/divider"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailfetch"
+        app:layout_constraintVertical_bias="0.365"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/cutom_btn"
+            android:drawableLeft="@drawable/plus"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:text="REGISTER NEW"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cutom_btn"
+            android:drawableLeft="@drawable/wait"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:shape="rectangle"
+            android:text="CHECK HISTORY"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/pendreq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cutom_btn"
+            android:drawableLeft="@drawable/pending"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+
+            android:shape="rectangle"
+            android:text="PENDING REQUESTS"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/rejectc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cutom_btn"
+            android:drawableLeft="@drawable/cross"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:shape="rectangle"
+
+            android:text="REJECTED COMPLAINTS"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cutom_btn"
+            android:drawableLeft="@drawable/power"
+            android:drawablePadding="10dp"
+            android:onClick="logout"
+            android:padding="15dp"
+            android:text="LOGOUT"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:text="Signed-In as : "
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard" />
+
+    <TextView
+        android:id="@+id/emailfetch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:gravity="left"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/dashboard" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
